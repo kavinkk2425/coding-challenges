@@ -1,0 +1,20 @@
+# program for the given no is the pow of 4 check 
+
+n=int(input("enter the no :"))
+i=0
+flag=0
+
+while(n!=(4**i)):
+
+
+    if(n<(4**i)):
+        flag=1
+        break
+
+    else:
+        i=i+1
+if(flag==1):
+    print("false")
+
+else:
+    print("true")
