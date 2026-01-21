@@ -1,0 +1,14 @@
+class Solution:
+    def getSecondLargest(self, arr):
+        
+        
+        if len(arr) < 2:
+            return -1
+
+        list1 = list(set(arr))
+
+        if len(list1) < 2:
+            return -1
+
+        list1.remove(max(list1))
+        return max(list1)
